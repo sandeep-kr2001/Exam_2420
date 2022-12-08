@@ -10,7 +10,7 @@
 List of Keybindings used :
 
 ``` 
-%s/\<eco\>/echo/g
+:%s/\<eco\>/echo/g
 :%s/\<V\>/C/g
 :s/1/0/g
 :s/numbs/:digit:/g 
