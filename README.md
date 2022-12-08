@@ -22,8 +22,9 @@ List of Keybindings used :
 2. Used :%s/\<V\>/C/g to replace the occurrence of V to C in the whole file 
 3. Used :s/1/0/g while keeping the pointer in the first line to replace 1 with 0 in the first file.
 4. Used :s/numbs/:digit:/g while keeping the pointer in line numbs present to replace it.
+![part2Vimbuffer](https://user-images.githubusercontent.com/97915467/206578718-35406bd1-dc7d-4f82-9c25-b4a9b1bf9985.JPG)
 
-![vimbuffer](https://github.com/sandeep-kr2001/Exam_2420/blob/main/Images/part2Vimbuffer.JPG)
+
 
 ## Part 3
 - print logs for the current boot
