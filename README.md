@@ -4,6 +4,8 @@
 
 ```sudo apt update && sudo apt upgrade```
 
+![update](https://github.com/sandeep-kr2001/Exam_2420/blob/main/Images/update.JPG)
+
 
 ## Part 2 
 
