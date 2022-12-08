@@ -37,7 +37,7 @@ For this I used /pretty to find the output
 - logs should have a priority of warning or more important
 
 For this I used /priority
-![priority](https://github.com/sandeep-kr2001/Exam_2420/blob/main/Images/pretty%20json.JPG)
+![pretty](https://github.com/sandeep-kr2001/Exam_2420/blob/f7d0d7f191c32f164e1d9b77d0b77ac01f2b5619/Images/priority.jfif)
 
 complete command
 
