@@ -44,40 +44,9 @@ complete command
 ```journalctl -b -o json-pretty -p "emerg".."warning”```
 ![complete command](https://github.com/sandeep-kr2001/Exam_2420/blob/main/Images/commplete%20command.JPG)
 
-
-## Part 5
-* saved this service file in /etc/systemd/system
-``` 
-[Unit]
-Description=Used to run the script
-
-[Service]
-Type=oneshot
-ExecStart=/opt/part5.sh
-
-[Install]
-WantedBy=multi-user.target
-```
-
-## Part 6 
-saved this timer file in /etc/systemd/system
-``` 
-[Unit]
-Description=part 5  Timer
-
-[Timer]
-OnBootSec=1min
-OnUnitActiveSec=1day
-
-[Install]
-WantedBy=timers.target
-
-``` 
-
-
 ## Part 4
 
- * script for part 4. 
+ * script for part 4. Saved this in /opt/
 ``` 
 
 #!/bin/bash
@@ -91,3 +60,36 @@ for user in $(awk -F: '$3 >= 1000 && $3 <= 5000 {print $1}' /etc/passwd); do
 done
 
 ```
+
+
+## Part 5
+* saved this service file in /etc/systemd/system
+``` 
+[Unit]
+Description=Used to run the script
+
+[Service]
+Type=oneshot
+ExecStart=/opt/part4.sh
+
+[Install]
+WantedBy=multi-user.target
+```
+
+## Part 6 
+saved this timer file in /etc/systemd/system
+``` 
+[Unit]
+Description=part 5 Timer
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1day
+
+[Install]
+WantedBy=timers.target
+
+``` 
+
+
+
