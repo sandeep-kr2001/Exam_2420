@@ -1,6 +1,6 @@
 # Exam_2420
 
-##Part 1
+## Part 1
 
 ```sudo apt update && sudo apt upgrade```
 
@@ -43,3 +43,8 @@ complete command
 
 ```journalctl -b -o json-pretty -p "emerg".."warning”```
 ![complete command](https://github.com/sandeep-kr2001/Exam_2420/blob/main/Images/commplete%20command.JPG)
+
+
+## Part 5
+
+
