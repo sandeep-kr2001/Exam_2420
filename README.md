@@ -27,11 +27,17 @@ List of Keybindings used :
 - print logs for the current boot
 
 For this I used /boot
-
+![Logs](https://github.com/sandeep-kr2001/Exam_2420/blob/main/Images/part3logs.JPG)
 - output in a nice pretty json.
 
 For this I used /pretty to find the output
-
+![pretty](https://github.com/sandeep-kr2001/Exam_2420/blob/main/Images/pretty%20json.JPG)
 - logs should have a priority of warning or more important
 
 For this I used /priority
+![priority](https://github.com/sandeep-kr2001/Exam_2420/blob/main/Images/pretty%20json.JPG)
+
+complete command
+
+```journalctl -b -o json-pretty -p "emerg".."warning”```
+![complete command](https://github.com/sandeep-kr2001/Exam_2420/blob/main/Images/commplete%20command.JPG)
