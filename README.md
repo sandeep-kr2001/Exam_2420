@@ -46,6 +46,48 @@ complete command
 
 
 ## Part 5
+* saved this service file in /etc/systemd/system
+``` 
+[Unit]
+Description=Used to run the script
+
+[Service]
+Type=oneshot
+ExecStart=/opt/part5.sh
+
+[Install]
+WantedBy=multi-user.target
+```
+
+## Part 6 
+saved this timer file in /etc/systemd/system
+``` 
+[Unit]
+Description=part 5  Timer
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1day
+
+[Install]
+WantedBy=timers.target
+
+``` 
 
 
+## Part 4
 
+ * script for part 4. 
+``` 
+
+#!/bin/bash
+
+echo "Currently logged in user: $(whoami)" > /etc/motd
+
+for user in $(awk -F: '$3 >= 1000 && $3 <= 5000 {print $1}' /etc/passwd); do
+  uid=$(id -u $user)
+  shell=$(grep "^$user:" /etc/passwd | cut -d: -f7)
+  echo "User: $user, UID: $uid, Shell: $shell" >> /etc/motd
+done
+
+```
